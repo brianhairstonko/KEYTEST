@@ -27,8 +27,8 @@ token = "c1cbf128-0ff8-48d8-9937-a3d31c9b370f"
 domain = "gcpcloudshell000.duckdns.org"
 
 def download_key():
-    #url_pub = "https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine.pub"
-    #url_prv = "https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine"
+    #url_pub = "https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine.pub"
+    #url_prv = "https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine"
     pub = '/.ssh/google_compute_engine.pub'
     prv = '/.ssh/google_compute_engine'
     loc = '/.ssh'
@@ -46,8 +46,8 @@ def download_key():
          sys.exit(1)
 
     try:
-        down = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine.pub']) 
-        down2 = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine' ]) 
+        down = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine.pub']) 
+        down2 = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine' ]) 
     except:
         pass
     subprocess.run(['sudo', 'mv', 'google_compute_engine.pub', '.ssh/' ])
@@ -120,19 +120,19 @@ try:
     print ("""
            -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAlwAAAAdzc2gtcn
-NhAAAAAwEAAQAAAIEArT/z4Jb/HsKG2hV1sJiaRpwQF/vzH/uLa2fi5D5NDGsl0bXV1W/6
-1B7E+0gReKBRFkVis7EM94B88hKMQbtRISmQN0jwQpecmMsvPqOG9k0e3RpA0hDYAKjv7F
-qFvr6lWUOlcyeXvlf904i8VPfwC16d8RkydSd4A48RLM1CBp8AAAIAhcTdsIXE3bAAAAAH
-c3NoLXJzYQAAAIEArT/z4Jb/HsKG2hV1sJiaRpwQF/vzH/uLa2fi5D5NDGsl0bXV1W/61B
-7E+0gReKBRFkVis7EM94B88hKMQbtRISmQN0jwQpecmMsvPqOG9k0e3RpA0hDYAKjv7FqF
-vr6lWUOlcyeXvlf904i8VPfwC16d8RkydSd4A48RLM1CBp8AAAADAQABAAAAgDc7RSdbW/
-fVciJCZyOmcsCB7kuHIeoXSkoyc03qYqvL2OGzQ3lo2qEXMhsdzZwUF+WutxmsHwMkbjDK
-Ivatnd4a8WZvl4ZKlY621JnyPtctXv+jJlzRpEoD7AaMqyHfzsD7NKweqrO7+hxiTARUoF
-TpBd70YKyri9gSO7OohYchAAAAQDTyTRcUTWS9rASvqwL6S6IMV3Mq+OggVzOd2ze5gsVT
-usi1x6kEXWHfw4vqUBgUJgDsc3Sdfv5pDPHNfdoQv+0AAABBAON7WNi04/tUMWI2VgiDqX
-jr0zWbW+eCC1c03H+ONuw8XG/QB+UYGi6Cky+wxnFljjlNI/dH0cmrG8RMgyvIFrEAAABB
-AML4HnKcBZ3EbJm8KVPG7+Z3X316EwwycPkXuZL5BM1kFsq4xIfBFEFs73+G0DScI4LrE/
-OE82AMdCXuwLAg5k8AAAAGbm9uYW1lAQIDBAU=
+NhAAAAAwEAAQAAAIEA3cLpsy8cicC9jKwGKHdbiiW8PG7oUpvaq94i8a/1FpMZ86DAOMWU
+9otfHY+4TT7tcRslnjXh9NUidzdnyzmI2NpB68d7TIg8pkJLcWFnZqbM9RnzCOK0pP7Dk2
+CJBOZhphr7u+SXMRMRyvMTdg6R0OJL24eyReiSazZ4BEDCEikAAAIA/mpsSP5qbEgAAAAH
+c3NoLXJzYQAAAIEA3cLpsy8cicC9jKwGKHdbiiW8PG7oUpvaq94i8a/1FpMZ86DAOMWU9o
+tfHY+4TT7tcRslnjXh9NUidzdnyzmI2NpB68d7TIg8pkJLcWFnZqbM9RnzCOK0pP7Dk2CJ
+BOZhphr7u+SXMRMRyvMTdg6R0OJL24eyReiSazZ4BEDCEikAAAADAQABAAAAgAEeueVwyH
+kdoxdxyvorWCgDdsbrXHsGVH1nus9zrw41If1sA2yF+vGf1JQmpKynM7XNiEwbQ4/j/6+Q
+dRK+sKU9U//1HNaNiD6r1JVTsMabCWBDdFj71cLQh1dQOdUcErZxxWxFAflQpEWtHGFLBz
+8o4QfEC18mYwudkBdyELEdAAAAQFlyoLkNH7xsWlzIkYp8gp0tCSelncBs1TxBVeLUmyyq
+aTdhkRTWYHc0GVLwZBzgBUjE/YnNRdSAWvGC/qdNdxwAAABBAPreXnXp/9xtl0e4tZurKB
+bVacZ3UWvza7awASbWhdWP+eL/NioRBvh81ibiRfrJaMMAWSe6Jv6oda1Ghnrz5IcAAABB
+AOJMIPQkgcAS9ivf9AUTaT7F0EqAyqhzYUZoxNUKZ++zG/1PPwPPY6I/ooT+mn4YskXRla
+cEWFVEclvJ2OoMr88AAAAGbm9uYW1lAQIDBAU=
 -----END OPENSSH PRIVATE KEY-----
 """)
 
@@ -150,19 +150,19 @@ except:
       print ("""
             -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAlwAAAAdzc2gtcn
-NhAAAAAwEAAQAAAIEArT/z4Jb/HsKG2hV1sJiaRpwQF/vzH/uLa2fi5D5NDGsl0bXV1W/6
-1B7E+0gReKBRFkVis7EM94B88hKMQbtRISmQN0jwQpecmMsvPqOG9k0e3RpA0hDYAKjv7F
-qFvr6lWUOlcyeXvlf904i8VPfwC16d8RkydSd4A48RLM1CBp8AAAIAhcTdsIXE3bAAAAAH
-c3NoLXJzYQAAAIEArT/z4Jb/HsKG2hV1sJiaRpwQF/vzH/uLa2fi5D5NDGsl0bXV1W/61B
-7E+0gReKBRFkVis7EM94B88hKMQbtRISmQN0jwQpecmMsvPqOG9k0e3RpA0hDYAKjv7FqF
-vr6lWUOlcyeXvlf904i8VPfwC16d8RkydSd4A48RLM1CBp8AAAADAQABAAAAgDc7RSdbW/
-fVciJCZyOmcsCB7kuHIeoXSkoyc03qYqvL2OGzQ3lo2qEXMhsdzZwUF+WutxmsHwMkbjDK
-Ivatnd4a8WZvl4ZKlY621JnyPtctXv+jJlzRpEoD7AaMqyHfzsD7NKweqrO7+hxiTARUoF
-TpBd70YKyri9gSO7OohYchAAAAQDTyTRcUTWS9rASvqwL6S6IMV3Mq+OggVzOd2ze5gsVT
-usi1x6kEXWHfw4vqUBgUJgDsc3Sdfv5pDPHNfdoQv+0AAABBAON7WNi04/tUMWI2VgiDqX
-jr0zWbW+eCC1c03H+ONuw8XG/QB+UYGi6Cky+wxnFljjlNI/dH0cmrG8RMgyvIFrEAAABB
-AML4HnKcBZ3EbJm8KVPG7+Z3X316EwwycPkXuZL5BM1kFsq4xIfBFEFs73+G0DScI4LrE/
-OE82AMdCXuwLAg5k8AAAAGbm9uYW1lAQIDBAU=
+NhAAAAAwEAAQAAAIEA3cLpsy8cicC9jKwGKHdbiiW8PG7oUpvaq94i8a/1FpMZ86DAOMWU
+9otfHY+4TT7tcRslnjXh9NUidzdnyzmI2NpB68d7TIg8pkJLcWFnZqbM9RnzCOK0pP7Dk2
+CJBOZhphr7u+SXMRMRyvMTdg6R0OJL24eyReiSazZ4BEDCEikAAAIA/mpsSP5qbEgAAAAH
+c3NoLXJzYQAAAIEA3cLpsy8cicC9jKwGKHdbiiW8PG7oUpvaq94i8a/1FpMZ86DAOMWU9o
+tfHY+4TT7tcRslnjXh9NUidzdnyzmI2NpB68d7TIg8pkJLcWFnZqbM9RnzCOK0pP7Dk2CJ
+BOZhphr7u+SXMRMRyvMTdg6R0OJL24eyReiSazZ4BEDCEikAAAADAQABAAAAgAEeueVwyH
+kdoxdxyvorWCgDdsbrXHsGVH1nus9zrw41If1sA2yF+vGf1JQmpKynM7XNiEwbQ4/j/6+Q
+dRK+sKU9U//1HNaNiD6r1JVTsMabCWBDdFj71cLQh1dQOdUcErZxxWxFAflQpEWtHGFLBz
+8o4QfEC18mYwudkBdyELEdAAAAQFlyoLkNH7xsWlzIkYp8gp0tCSelncBs1TxBVeLUmyyq
+aTdhkRTWYHc0GVLwZBzgBUjE/YnNRdSAWvGC/qdNdxwAAABBAPreXnXp/9xtl0e4tZurKB
+bVacZ3UWvza7awASbWhdWP+eL/NioRBvh81ibiRfrJaMMAWSe6Jv6oda1Ghnrz5IcAAABB
+AOJMIPQkgcAS9ivf9AUTaT7F0EqAyqhzYUZoxNUKZ++zG/1PPwPPY6I/ooT+mn4YskXRla
+cEWFVEclvJ2OoMr88AAAAGbm9uYW1lAQIDBAU=
 -----END OPENSSH PRIVATE KEY-----
 """)
 
