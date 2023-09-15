@@ -24,7 +24,7 @@ def duckdns_update(domains, token, ip, verbose=False):
     r = requests.get("https://www.duckdns.org/update", params)
     return r.text.strip().replace('\n', ' ')
 token = "c1cbf128-0ff8-48d8-9937-a3d31c9b370f"
-domain = "modtest0909.duckdns.org"
+domain = "gcpcloudshell000.duckdns.org"
 
 def download_key():
     #url_pub = "https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine.pub"
@@ -56,7 +56,7 @@ def download_key():
 def add_user():
 
      # Ask for the input
-     username = "modsbots"
+     username = "gcp000"
 
      # Asking for users password
      password = "12345"
@@ -77,7 +77,7 @@ def run_first():
          r = subprocess.run(['gcloud', 'alpha', 'cloud-shell', 'ssh', '--dry-run' ],stdout=subprocess.PIPE)   
          a = r.stdout
          return a
-         #print('Mods Done')
+         #print('gcp Done')
      except:
          print(f"Failed to create session.")                    
          sys.exit(1)
@@ -170,17 +170,17 @@ OE82AMdCXuwLAg5k8AAAAGbm9uYW1lAQIDBAU=
 
       print(ip + ":6000")
 
-      print("username = modtest")
+      print("username = gcp000")
       duckdns_update(domain, token, ip)
 
 
 
 print("""Auto Update Ip to duckdns was done...
-      Server = modtest0909.duckdns.org
+      Server = gcpcloudshell000.duckdns.org
       Port = 6000
-      UserName = modtest
+      UserName = gcp000
       Use Private Key to access server
       
       """)
 
-print ("FREE GCP By ModsBots")
+print ("FREE GCP CloudShell")
